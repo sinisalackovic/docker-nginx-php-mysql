@@ -91,6 +91,7 @@ This project use the following ports :
 | PHPMyAdmin | 8080 |
 | Nginx      | 8000 |
 | Nginx SSL  | 3000 |
+| Portainer  | 9001 |
 
 ___
 
@@ -376,12 +377,12 @@ stop all containers:
 ```sh
 docker kill $(docker ps -q)
 ```
-remove all containers
+remove all containers:
 ```sh
 docker rm $(docker ps -a -q)
 ```
 
-remove all docker images
+remove all docker images:
 ```sh
 docker rmi $(docker images -q)
 ```
