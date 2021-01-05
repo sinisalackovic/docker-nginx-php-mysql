@@ -370,6 +370,21 @@ source .env && docker exec -i $(docker-compose ps -q mysqldb) mysql -u"$MYSQL_RO
 ?>
 ```
 
+#### Remove all containers and images
+
+stop all containers:
+```sh
+docker kill $(docker ps -q)
+```
+remove all containers
+```sh
+docker rm $(docker ps -a -q)
+```
+
+remove all docker images
+```sh
+docker rmi $(docker images -q)
+```
 ___
 
 ## Help us
